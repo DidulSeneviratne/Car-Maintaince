@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Car_maintenance</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title">Find a city</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string-array name="item">
+        <item>Diesel</item>
+        <item>Petrol</item>
+    </string-array>
+    <string-array name="item1">
+        <item>All time</item>
+        <item>This year</item>
+        <item>This month</item>
+        <item>This week</item>
+    </string-array>
+</resources>

@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.universl.didul.car_maintenance.add_trip">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/search_bar"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@drawable/background_color"
+        app:contentInsetStart="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:layout_scrollFlags="scroll|enterAlways|snap">
+
+        <ImageView
+            android:id="@+id/save"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/ic_save_foreground"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:text="Departure:"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/ddate"
+            android:onClick="add1"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date/Time"
+            android:textSize="14sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.25dp"
+            android:background="@color/black" />
+
+        <EditText
+            android:backgroundTint="@color/black"
+            android:textColor="@color/black"
+            android:id="@+id/dodo"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="-3dp"
+            android:layout_marginEnd="-3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Odometer"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/dloc"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Location"
+            android:textSize="14sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.25dp"
+            android:background="@color/black" />
+
+        <TextView
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="20dp"
+            android:text="Arrival:"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/adate"
+            android:onClick="add2"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date/Time"
+            android:textSize="14sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.25dp"
+            android:background="@color/black" />
+
+        <EditText
+            android:backgroundTint="@color/black"
+            android:textColor="@color/black"
+            android:id="@+id/aodo"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="-3dp"
+            android:layout_marginEnd="-3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Odometer"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/aloc"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Location"
+            android:textSize="14sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.25dp"
+            android:background="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:backgroundTint="@color/black"
+                android:textColor="@color/black"
+                android:id="@+id/distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:hint="Distance Traveled"/>
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="3dp"
+                android:text="km"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:backgroundTint="@color/black"
+                android:textColor="@color/black"
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:hint="Time Traveled"/>
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="3dp"
+                android:text="h"/>
+
+            <EditText
+                android:backgroundTint="@color/black"
+                android:textColor="@color/black"
+                android:id="@+id/avg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="80sp"
+                android:textSize="14sp"
+                android:hint="Avg Speed"/>
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="3dp"
+                android:text="kmph"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:backgroundTint="@color/black"
+                android:textColor="@color/black"
+                android:id="@+id/park"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:hint="Parking"/>
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="3dp"
+                android:text="LKR"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="10dp"
+            android:text="Notes:"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:backgroundTint="@color/black"
+            android:textColor="@color/black"
+            android:id="@+id/notes"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
