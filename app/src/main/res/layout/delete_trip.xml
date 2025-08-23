@@ -6,13 +6,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:background="@color/white"
-    tools:context="com.universl.didul.car_maintenance.edit_trip">
+    tools:context=".edit_trip">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/search_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/background_color"
+        android:background="@color/red"
         android:minHeight="?attr/actionBarSize"
         android:padding="5dp"
         app:contentInsetStart="0dp"

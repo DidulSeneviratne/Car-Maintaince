@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.universl.didul.car_maintenance.MainActivity"
+    tools:context=".MainActivity"
     android:fitsSystemWindows="true"
     tools:openDrawer="start">
 
@@ -29,7 +29,7 @@
         android:padding="5dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/background_color"
+        android:background="@color/red"
         app:contentInsetStart="0dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

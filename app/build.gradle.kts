@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "com.universl.didul.car_maintenance"
+    namespace = "com.izoneapps.carmanager"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.universl.didul.car_maintenance"
+        applicationId = "com.izoneapps.carmanager"
         minSdk = 26
         targetSdk = 34
         versionCode = 1

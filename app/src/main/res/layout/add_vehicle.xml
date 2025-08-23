@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:minHeight="?attr/actionBarSize"
-        android:background="@drawable/background_color"
+        android:background="@color/red"
         app:contentInsetStart="0dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -46,7 +46,7 @@
             <ImageView
                 android:id="@+id/picture"
                 android:layout_width="match_parent"
-                android:layout_height="150dp"
+                android:layout_height="wrap_content"
                 android:hint="Add photo"/>
 
             <TextView
@@ -193,7 +193,7 @@
                 android:layout_marginBottom="5dp"
                 android:id="@+id/document"
                 android:layout_width="match_parent"
-                android:layout_height="150dp"
+                android:layout_height="wrap_content"
                 android:hint="Add document"/>
 
             <Button
